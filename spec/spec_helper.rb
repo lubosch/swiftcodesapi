@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
 require "swiftcodesapi"
+require "webmock/rspec"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure
@@ -12,4 +13,8 @@ RSpec.configure do |config|
   config.expect_with :rspec do |c|
     c.syntax = :expect
   end
+end
+
+Swiftcodesapi.configure do |config|
+  config.api_key = "3243434"
 end
