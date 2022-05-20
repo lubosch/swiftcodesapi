@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    swiftcodesapi (0.1.0)
+    swiftcodesapi (0.1.1)
 
 GEM
   remote: https://rubygems.org/

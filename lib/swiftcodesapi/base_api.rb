@@ -13,7 +13,7 @@ module Swiftcodesapi
         request.body = payload
       end
 
-      raise ServiceError, response.body if response.status != 200
+      raise Swiftcodesapi::ResponseError, response.body if response.status != 200
 
       JSON.parse(response.body)
     end
